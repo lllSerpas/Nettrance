@@ -11,9 +11,13 @@
     
         <script>
         $(document).ready(function(){
-             $("#settingLink").click(function(){
-                 console.log("Icon clicked");
-             });
+            $("#settingLink").click(function(){
+                $("#settingIcon").toggleClass("settingOpen");
+                $("#settingSlider").slideToggle("displaySetting");
+            });
+            
+            
+        
         });
         </script>
 
@@ -34,7 +38,13 @@
               
             </div>
             </div>
-       
+        <div id="settingSlider" class="row">
+            <div class="col-sm-12 settingOption">Home</div>
+            <div class="col-sm-12 settingOption">Projects</div>
+            <div class="col-sm-12 settingOption">Blog</div>
+            <div class="col-sm-12 settingOption">About</div>
+        </div>
+        
         <div class="row">
             <div class="col-sm-4 netColumn">Col One</div>
             <div class="col-sm-4 netColumn">Col Two</div>

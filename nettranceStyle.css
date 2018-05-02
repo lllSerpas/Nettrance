@@ -15,7 +15,6 @@ header{
     background: #0047ab;
 }
 
-
 .dash{
     border: 1px solid yellow;
     width: 1px;
@@ -27,14 +26,12 @@ header{
 }
 
 
-
 .titleChild{
     padding-left: 20px;
     position: relative;
     font-size: 50px;
     color: yellow;
 }
-
 
 #settingLink{
     width: 100px;
@@ -50,13 +47,28 @@ header{
 #settingIcon{
     position: relative;
     margin-top: 13px;
+   
+}
+
+#settingSlider{
+    display: none;
+    background: black;
+    color: yellow;
+    text-align: center;
+    font-size: 40px;
+}
+
+.displaySetting{
+    display: block;
+}
+
+.settingOpen{
+    color: yellow;
+}
+.settingOption{
+    border: 1px solid #808080;
 }
 
 .netColumn{
     background: black;
-    
-}
-
-.glyphicon{
-    font-size: 100px;
 }
