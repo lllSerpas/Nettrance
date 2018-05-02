@@ -1,0 +1,62 @@
+body{
+background: black;
+}
+
+header{
+   border: 5px double black;
+}
+
+.steelHeader{
+    background: #808080;
+    color: white;
+}
+
+.cobalt{
+    background: #0047ab;
+}
+
+
+.dash{
+    border: 1px solid yellow;
+    width: 1px;
+    margin-right: 10px;
+}
+
+.titleParent{
+    padding: 0px 0px 10px 20px;
+}
+
+
+
+.titleChild{
+    padding-left: 20px;
+    position: relative;
+    font-size: 50px;
+    color: yellow;
+}
+
+
+#settingLink{
+    width: 100px;
+    height: 100px;
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#settingIcon{
+    position: relative;
+    margin-top: 13px;
+}
+
+.netColumn{
+    background: black;
+    
+}
+
+.glyphicon{
+    font-size: 100px;
+}

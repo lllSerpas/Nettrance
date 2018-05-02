@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Nettrance</title>
+		<link rel="stylesheet" type="text/css" href="nettranceStyle.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    
+        <script>
+        $(document).ready(function(){
+             $("#settingLink").click(function(){
+                 console.log("Icon clicked");
+             });
+        });
+        </script>
+
+    </head>
+    <body>
+        <div class="row">
+            <div class="steelHeader col-sm-12">
+                <h1 class="titleParent"><kbd class="titleChild">
+                <span class="dash"></span>
+                <span class="dash"></span>
+                <span class="dash"></span>
+                Net</kbd>trance</h1>
+                
+                <div id="settingLink">
+                    <i id="settingIcon" class="fas fa-5x fa-bars"></i>
+                </div>
+                
+              
+            </div>
+            </div>
+       
+        <div class="row">
+            <div class="col-sm-4 netColumn">Col One</div>
+            <div class="col-sm-4 netColumn">Col Two</div>
+            <div class="col-sm-4 netColumn">Col Three</div>
+        </div>
+    </body>
+</html>
