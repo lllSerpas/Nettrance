@@ -1,0 +1,545 @@
+
+
+header{
+	background-color: white;
+	border: 13px double #000;
+	margin-bottom: 10px;
+    border-radius: 0px;
+    padding-top: 15px;
+    width: 920px;
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+footer
+{
+    width: 920px;
+    background-color: white;
+	border: 13px double #000;
+	margin-bottom: 10px;
+    border-radius: 0px;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+footer{
+    color: black;
+    font: 150px;
+}
+
+body{
+	background-color: #ccc;//#000033;
+}
+
+.board{
+	width: 910px;
+	height: 840px;
+	background-color: #fff;
+	border: 13px double #000;
+    padding-left: 10px;
+    padding-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.scoreContainer{
+   	background-color: white;
+	border: 13px double #000;
+	margin-bottom: 10px;
+    border-radius: 0px;
+    padding-top: 45px;
+    width: 920px;
+    height: 155px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scoreData{
+    width: auto;
+    height: auto;
+    padding: 0px 20px 0px 20px;
+}
+
+#multiplierLegend
+{   
+    position: absolute;
+    top: -55px;
+    left: 10px;
+    color: black;
+    font-size: 40px;
+}
+
+.multiplier{
+    background: black;
+    width: 180px;
+    height: 120px;
+    position: relative;
+    display: inline;
+    border-radius: 35px;
+    border: 13px double white;
+    float: left;
+}
+
+#multiplierDisplay{
+    margin-right: 10px;
+    color: yellow;
+    font-size: 100px;
+    float: right;
+}
+
+#comboLegend
+{   
+    position: absolute;
+    top: -55px;
+    left: 30px;
+    color: black;
+    font-size: 40px;
+}
+
+.combo{
+    background: black;
+    width: 180px;
+    height: 120px;
+    position: relative;
+    display: inline;
+    border-radius: 35px;
+    border: 13px double white;
+    float: left;
+}
+
+#comboDisplay{
+    margin-right: 10px;
+    color: yellow;
+    font-size: 100px;
+    float: right;
+}
+
+#scoreboardLegend
+{   
+    position: absolute;
+    top: -55px;
+    left: 180px;
+    color: black;
+    font-size: 40px;
+}
+
+.scoreboard{
+    background: black;
+    width: 440px;
+    height: 120px;
+    position: relative;
+    display: inline;
+    border-radius: 35px;
+    border: 13px double white;
+    float: right;
+}
+
+#scoreboardDisplay{
+    margin-right: 10px;
+    color: yellow;
+    font-size: 100px;
+    float: right;
+}
+
+.ballContainer{
+    width: 350px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+}
+
+.prevBallCall{
+    width: 160px;
+    height: 160px;
+    border-radius: 360px;
+    background-color: #ffaaaa;
+    border: 5px solid black;
+    display: block;
+    float: left;
+}
+
+#prevBallDisplay{
+    position: absolute;
+    display: inline;
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-right: auto;
+    color: black;
+    font-size: 120px;
+    
+}
+
+.ballCall{
+    width: 160px;
+    height: 160px;
+    border-radius: 360px;
+    background-color: #aaffaa;
+    border: 5px solid black;
+    display: block;
+    float: right;
+        
+}
+
+#ballDisplay{
+    position: absolute;
+    display: inline;
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-right: auto;
+    color: black;
+    font-size: 120px;
+}
+
+.betPending{
+    background-color: #cccc00; 
+    border: 5px solid #58524d;
+    width: 130px;
+    width: 130px;
+}
+
+.betLost{
+    background-color: #aa0000;
+    border: 5px solid #58524d;
+    width: 130px;
+    width: 130px;
+}
+
+.betWon{
+    background-color: #0b6623;
+    border: 5px solid #58524d;
+    width: 130px;
+    width: 130px;
+}
+
+.betInfo{
+    color: yellow;
+    width: 130px;
+    width: 130px;
+    border-radius: 30px;
+    font-size: 40px;
+}
+
+.missBet{
+    background-color: #cccc00;
+    color: black;
+    border: 5px solid black;
+}
+
+.missBet .betInfo
+{
+    color: black;
+}
+.noBet{
+    background-color: white;
+    border: 5px solid white;
+}
+
+.velvet
+{
+	border-radius:30px;
+    width: 130px;
+	height: 130px;
+    /* 
+    padding: 2px; 
+    */
+}
+
+.betPending:hover{
+    background-color: yellow; 
+}
+
+.betLost:hover{
+    background-color: red; 
+}
+.noBet:hover{
+    background-color: white;
+}
+
+.betWon:hover{
+    background-color: #32CD32;
+}
+
+.missBet:hover
+{
+   background-color: yellow; 
+}
+
+.betLost .betBox{
+    display: none;
+}
+
+.betWon .betBox{
+    display: none;
+}
+
+.defaultVelvet{
+    background-color: #440034;
+    width: 130px;
+	height: 130px;
+	border: 5px solid #58524d;
+}
+
+.defaultVelvet:hover{
+    background-color: purple;
+}
+
+.stake{
+    position: relative;
+    width:100px;
+    height: 20px;
+    margin: auto;
+    font-size: 20px;
+    overflow: hidden;
+    color: white;
+    border-radius: 10px;
+    pointer-events: none !important;
+}
+
+.choiceBooth{
+	position: relative;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.amountBooth{
+	position: relative;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.submitBet{
+	position: relative;
+	margin-top: 85px;
+	width: 220px;
+		
+}
+	
+#amount{
+	width:80px;
+	text-align: center;
+}
+
+#choice{
+	width:84px;
+}
+
+#betButton{
+	position: relative;
+	margin-left: 10px;
+	float: left;
+	width: 95px;
+}
+
+#cancelButton{
+	margin-left: 15px;
+	width: 95px;
+}
+
+.cancel:hover{
+	background-color: #ffaaaa;
+}
+
+.symbolBooth{
+	border-radius:50px;
+	background: #999;
+	margin-left: 65px;
+	margin-top: 5px;
+	width: 50px;
+	height: 50px;
+	padding: 20px;
+	color: #000;
+	border: 1px solid black;
+}
+
+.answerBooth{
+	position: relative;
+	font-family: arial, sans-serif;
+	font-size: 60px;
+	line-height: 25px;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+.boxBooth{	
+	width: 100px;
+	height: 50px;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+
+.box{
+	width: 100px;
+	background: #111;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 95px;
+}
+
+.booth{	
+    position: absolute;
+	border-radius: 25px;
+	background: #000;
+	width: 240px;
+	height: 340px;	
+	border: 13px solid #000;
+	margin-top: 235px;
+	margin-left: 310px;
+	display: none;
+}
+
+.bettingBooth{
+	position: absolute;
+	border-radius: 20px;
+	background: #fff;
+	width: 230px;
+	height: 330px;	
+	border: 15px dotted purple;
+	z-index: 5;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
+.bb1{
+	position: absolute;
+	border-radius: 25px;
+	background: #fff;
+	width: 220px;
+	height: 320px;	
+	border: 5px dotted #006699;
+	margin-left: 0px;
+}
+
+.bb2{
+    border-radius: 20px;
+    width: 240px;
+    height: 340px;
+    margin-left: -5px;
+    margin-top: -5px;
+    background: #000;
+}
+
+.betBox {
+	border-radius: 25px;
+	background: #000;	
+	border-radius:50%;
+	border: 1px solid #008800;
+}
+
+.noHover{
+    background-color: red;
+}
+
+.component{
+	margin-top: 5px;
+	margin-left: 0px;
+	color: #fff;
+	visibility: hidden;
+}
+
+.symbol{	
+	border-radius:50px;
+	background: #eff;
+	margin-left: 34px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 20px;
+	height: 20px;
+	padding: 20px;
+	color: #000;
+    pointer-events: none !important;
+}
+
+.answer{
+	position: relative;
+	font-family: arial, sans-serif;
+	font-size: 60px;
+	line-height: 15px;
+	text-align: left;
+	left: -10px;
+}
+
+@font-face
+{
+	font-family: reno;
+	src: url(reno.ttf);
+}
+
+table
+{
+	margin-left: 90px;
+}
+
+.symbolNumberTop
+{
+	margin-left: 40px;
+	width: 15px;
+	height: 15px;
+	padding: 20px;
+}
+
+.symbolNumberSide
+{
+	width: 30px;
+	height: 15px;
+	padding: 20px;
+}
+
+select
+{
+	outline: 0px;
+}
+
+input
+{
+	text-align: center;
+	outline: 0px;
+}
+
+input[type=button], input[type=submit]
+{
+	border-radius: 20px;
+	width: 75px;
+	font-size: 20px;
+	text-align:center;
+}
+
+input[type=button]:hover
+{
+	//background-color: #aaffaa;
+}
+
+.confirm:hover
+{
+	background-color: #aaffaa;
+}
+
+.cancel:hover
+{
+	background-color: #ffaaaa;	
+}
+
+label.status
+{
+	display: none;
+}
+
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

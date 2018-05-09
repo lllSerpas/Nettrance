@@ -1,0 +1,470 @@
+<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title> Beta Bet </title>
+		<link rel="stylesheet" type="text/css" href="alphaStyle.css">
+		<script type="text/javascript" src="../jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="../jquery-ui.min.js"></script>
+		
+		<script type="text/javascript" src="alphaScript.js"></script>
+		
+		
+	</head>
+	<body>
+		<header>
+            <div class="ballContainer">
+                <div class="prevBallCall noSelect">
+                    <div id="prevBallDisplay"></div>
+                </div>
+                <div class="ballCall noSelect">
+                    <div id="ballDisplay"></div>
+                </div>
+            </div>
+            
+            <div class="treeLightLeft">
+                <div class="treeLightRed">
+                    <div class="treeLightRedStem"></div>
+                </div>
+                <div class="treeLightRed">
+                    <div class="treeLightRedStem"></div>
+                </div>
+                <div class="treeLightRed">
+                    <div class="treeLightRedStem"></div>
+                </div>
+                <div class="treeLightYellow">
+                    <div class="treeLightYellowStem"></div>
+                </div>
+                <div class="treeLightYellow">
+                    <div class="treeLightYellowStem"></div>
+                </div>
+                <div class="treeLightGreen">
+                    <div class="treeLightGreenStem"></div>
+                </div>
+            </div>
+            
+            <div class="treeLightRight">
+                <div class="treeLightRed">
+                    <div class="treeLightRedStem"></div>
+                </div>
+                <div class="treeLightRed">
+                    <div class="treeLightRedStem"></div>
+                </div>
+                <div class="treeLightRed">
+                    <div class="treeLightRedStem"></div>
+                </div>
+                <div class="treeLightYellow">
+                    <div class="treeLightYellowStem"></div>
+                </div>
+                <div class="treeLightYellow">
+                    <div class="treeLightYellowStem"></div>
+                </div>
+                <div class="treeLightGreen">
+                    <div class="treeLightGreenStem"></div>
+                </div>
+            </div>
+            
+        </header>
+		
+        <div class="scoreContainer">
+            <div class="scoreData">
+                <div class="multiplier noSelect">
+                    <div id="multiplierLegend">Multiplier</div>
+                    <div id="multiplierDisplay">x0</div>
+                </div>
+                <div class="combo noSelect">
+                    <div id="comboLegend">Combo</div>
+                    <div id="comboDisplay">x1</div>
+                </div>
+                <div class ="scoreboard noSelect">
+                    <div id="scoreboardLegend">Score</div>
+                    <div id="scoreboardDisplay">$0</div> 
+                </div>
+            </div>
+        </div>
+        
+		<div class ="mainContainer">
+			<div class="board">        
+			<table>
+            <tr>
+				<th class="col0 noSelect" id="0">
+					<div class="symbolNumberTop">
+						#1
+					</div>
+				</th>
+				<th class="col1 noSelect" id="1">
+					<div class="symbolNumberTop">
+						#2
+					</div>
+				</th>
+				<th class="col2 noSelect" id="2">
+					<div class="symbolNumberTop">
+						#3
+					</div>
+				</th>
+				<th class="col3 noSelect" id="3">
+					<div class="symbolNumberTop">
+						#4
+					</div>
+				</th>
+				<th class="col4 noSelect" id="4">
+					<div class="symbolNumberTop">
+						#5
+					</div>
+				</th>
+			</tr>
+			
+			<tr class="velvetRow">
+				<th class = "velvet" id="velvet00">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet01">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div>
+						</div>
+							
+						<div class="stake noSelect">$0</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet02">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet03">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet04">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class="velvetRowCol0">
+                    <div class="symbolNumberSide row1 noSelect">
+                        #1
+                    </div>
+				</th>
+			</tr>
+			
+			<tr class="velvetRow">
+			<th class = "velvet" id="velvet05">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet06">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet07">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet08">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet09">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class="velvetRowCol1">
+                    <div class="symbolNumberSide row2 noSelect">
+                        #2
+                    </div>
+				</th>
+			</tr>
+			
+			<tr class="velvetRow">
+			<th class = "velvet" id="velvet10">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet11">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet12">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet13">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet14">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class="velvetRowCol2">
+                    <div class="symbolNumberSide row3 noSelect">
+                        #3
+                    </div>
+				</th>
+			</tr>
+			
+			<tr class="velvetRow">
+			<th class = "velvet" id="velvet15">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet16">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet17">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet18">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet19">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class="velvetRowCol3">
+                    <div class="symbolNumberSide row4 noSelect">
+                        #4
+                    </div>
+				</th>
+			</tr>
+			
+			<tr class="velvetRow">
+			<th class = "velvet" id="velvet20">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet21">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet22">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet23">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvet" id="velvet24">
+					<div class="betBox">
+						<div class="symbol">
+							<div class="answer noSelect">?</div></div><div class="stake noSelect">$0
+						</div>	
+						
+						<div class="component">
+							<input type="button" name="bet" class="bet confirm" value="Bet"/>
+						</div>
+					</div>
+				</th>
+				
+				<th class = "velvetRowCol4">
+                    <div class="symbolNumberSide row5 noSelect">
+                        #5
+                    </div>
+				</th>
+			</tr>
+                
+        <div style="position: relative; bottom: 0px; margin-left: auto; margin-right: auto;">Alpha-Bet Ver1. By Luis Serpas</div>
+		</table>
+		</div>
+        </div>
+		
+		<footer> Luis Serpas 4/29/2018 </footer>
+		
+		
+			
+			
+	</body>
+</html>
